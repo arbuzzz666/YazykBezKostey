@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#f1e2f2">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Симулятор собеседования"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4d324c"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Счётчик вопросов -->
+    <TextView
+        android:id="@+id/tv_question_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вопрос 0/5"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Вопрос -->
+    <TextView
+        android:id="@+id/tv_interview_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4c5e4"
+        android:padding="24dp"
+        android:gravity="center"
+        android:text="Нажмите «Начать» для получения вопросов"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:minHeight="120dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Кнопка Начать / Следующий вопрос -->
+    <Button
+        android:id="@+id/btn_next_question"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:text="🎤 Начать"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#bb6fbc"/>
+
+    <!-- Кнопка Завершить -->
+    <Button
+        android:id="@+id/btn_finish_interview"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:text="✅ Завершить"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#c98cc9"/>
+
+    <!-- Кнопка Ещё раз (показывается после завершения) -->
+    <Button
+        android:id="@+id/btn_restart_interview"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:text="🔄 Ещё раз"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#bb6fbc"/>
+
+    <!-- Кнопка возврата -->
+    <Button
+        android:id="@+id/btn_back_interview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад к упражнениям"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#d6a9d7"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f1e2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание предмета"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4d324c"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описывайте предмет вслух. Слова считаются автоматически."
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Предмет -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Предмет для описания:"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_item_to_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4c5e4"
+            android:padding="20dp"
+            android:gravity="center"
+            android:text="Нажмите «Начать» чтобы получить предмет"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Счётчик предметов -->
+        <TextView
+            android:id="@+id/tv_item_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Предметов описано: 0"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Таймер -->
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="03:00"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#bb6fbc"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Статус -->
+        <TextView
+            android:id="@+id/tv_describe_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Кнопка Начать -->
+        <Button
+            android:id="@+id/btn_start_describe"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:text="▶ Начать"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#92448c"/>
+
+        <!-- Кнопка Следующий предмет -->
+        <Button
+            android:id="@+id/btn_next_item"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:text="След. предмет"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#be8fba"/>
+
+        <!-- Кнопка Завершить -->
+        <Button
+            android:id="@+id/btn_stop_describe"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="⏹ Завершить"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#d6a9d7"/>
+
+        <!-- Результат -->
+        <LinearLayout
+            android:id="@+id/layout_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e4c5e4"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📊 Результат упражнения"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#bb6fbc"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_result_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описано предметов: 0"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_result_words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Названо слов: 0"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Кнопка возврата -->
+        <Button
+            android:id="@+id/btn_back_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад к упражнениям"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#d6a9d7"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

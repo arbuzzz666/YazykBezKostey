@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:background="#f1e2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Скороговорка «Лигурия»"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4d324c"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btn_record"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="🎤 Начать запись"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#bb6fbc"/>
+
+            <Button
+                android:id="@+id/btn_stop_record"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="⏹ Остановить"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:enabled="false"
+                android:alpha="0.5"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#d6a9d7"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_view_recordings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📂 Мои записи"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#c98cc9"/>
+
+        <TextView
+            android:id="@+id/tv_record_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нажмите «Начать запись» и читайте скороговорку"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recordings"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#e4c5e4"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️ ВАЖНАЯ ИНСТРУКЦИЯ ✏️"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#bb6fbc"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Возьмите карандаш и зажмите его зубами примерно между клыками. Карандаш должен располагаться горизонтально, поперёк рта. Читайте скороговорку чётко, стараясь преодолевать помеху. После записи попробуйте без карандаша — вы заметите, насколько чище стала речь!"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tongue_twister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4c5e4"
+            android:padding="20dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="Загрузка текста..."/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад к упражнениям"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#d6a9d7"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

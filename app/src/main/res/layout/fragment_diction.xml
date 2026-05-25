@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f1e2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Раздел «Дикция»"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#4d324c"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите упражнение для тренировки"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:id="@+id/layout_tongue_twister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="#e4c5e4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🗣 Скороговорка «Лигурия»"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#210020"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Чтение скороговорки с карандашом во рту для улучшения дикции и артикуляции."
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нажмите, чтобы начать"
+                    android:textSize="14sp"
+                    android:textColor="#bb6fbc"
+                    android:textStyle="bold"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:id="@+id/layout_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="#d6a9d7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📖 Чтение вслух"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#210020"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выразительное чтение стихотворений Пушкина для развития интонации и речи."
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нажмите, чтобы начать"
+                    android:textSize="14sp"
+                    android:textColor="#bb6fbc"
+                    android:textStyle="bold"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рекомендуется выполнять упражнения ежедневно для достижения наилучших результатов."
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

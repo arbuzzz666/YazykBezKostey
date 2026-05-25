@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Язык без костей</string>
+
+    <!-- Нижняя навигация -->
+    <string name="nav_diction">Дикция</string>
+    <string name="nav_literacy">Грамотность</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Общие -->
+    <string name="back_to_exercises">Назад к упражнениям</string>
+    <string name="tap_to_start">Нажмите, чтобы начать</string>
+    <string name="zero">0</string>
+
+    <!-- Скороговорка -->
+    <string name="already_recording">Запись уже идёт</string>
+    <string name="record_error">Ошибка начала записи</string>
+    <string name="record_status_recording">🔴 Идёт запись… Говорите чётко!</string>
+    <string name="record_status_done">✅ Запись завершена! Упражнение выполнено.</string>
+    <string name="permission_granted">Разрешение получено</string>
+    <string name="permission_denied">Без разрешения микрофона запись невозможна</string>
+
+    <!-- Чтение вслух -->
+    <string name="reading_poem_not_selected">Сначала выберите стихотворение</string>
+    <string name="reading_status_active">✅ Чтение началось! Прочитайте стихотворение выразительно вслух.</string>
+    <string name="reading_task_done">Задание «Чтение вслух» выполнено!</string>
+    <string name="reading_status_default">Стихотворение выбрано. Нажмите «Начать чтение» для выполнения.</string>
+
+    <!-- Описание предмета -->
+    <string name="describe_timer_running">Таймер уже запущен</string>
+    <string name="describe_no_data">Нет данных</string>
+    <string name="describe_item_format">Предмет: %s</string>
+    <string name="describe_time_up">Время вышло! Задание выполнено.</string>
+    <string name="describe_button_default">🎯 Начать</string>
+    <string name="describe_button_active">Идёт описание…</string>
+
+    <!-- Симулятор собеседования -->
+    <string name="interview_not_enough">Недостаточно вопросов</string>
+    <string name="interview_question_counter">Вопрос %d/5</string>
+    <string name="interview_finished_text">Собеседование пройдено! Отличная работа.</string>
+    <string name="interview_finished_label">Завершено</string>
+    <string name="interview_all_done">Вы ответили на все 5 вопросов!</string>
+    <string name="interview_next_button">✅ Следующий вопрос</string>
+
+    <!-- Лексический марафон -->
+    <string name="marathon_words_counter">Названо слов: %d</string>
+    <string name="marathon_task_format">Задание:\n%s</string>
+    <string name="marathon_status_start">Нажмите «Начать» для старта</string>
+    <string name="marathon_status_speak">Называйте слова!</string>
+    <string name="marathon_status_time_up">Время вышло!</string>
+    <string name="marathon_task_done_format">Задание завершено. Названо слов: %d</string>
+    <string name="marathon_next_loaded">Следующее задание загружено</string>
+    <string name="marathon_all_completed">Марафон завершён! Все 15 заданий пройдены.</string>
+    <string name="marathon_finished_short">Марафон завершён!</string>
+    <string name="marathon_all_done_status">Вы прошли все задания</string>
+
+    <!-- Профиль -->
+    <string name="reset_dialog_title">Сброс статистики</string>
+    <string name="reset_dialog_message">Вы действительно хотите обнулить все свои достижения? Это действие нельзя отменить.</string>
+    <string name="reset_confirm">Да, сбросить</string>
+    <string name="reset_cancel">Отмена</string>
+    <string name="reset_success">✅ Статистика успешно сброшена</string>\
+    <!-- Мои записи -->
+    <string name="my_recordings">Мои записи</string>
+    <string name="no_recordings">Нет сохранённых записей</string>
+
+    <string name="delete_recording">Удалить</string>
+    <string name="play_recording">Воспроизвести</string>
+    <string name="recognition_result">Результат распознавания</string>
+    <string name="recording_date">Дата записи</string>
+    <string name="recording_duration">Длительность</string>
+    <!-- Записи -->
+    <string name="view_recordings">📂 Мои записи</string>
+    <string name="hide_recordings">📂 Скрыть записи</string>
+    <string name="recording_saved">✅ Запись сохранена</string>
+    <string name="recording_deleted">🗑 Запись удалена</string>
+    <string name="play_error">Ошибка воспроизведения</string>
+    <string name="speech_not_available">Распознавание речи недоступно</string>
+    <string name="recognition_prompt">Произнесите скороговорку</string>
+    <string name="recognition_result_label">Результат: %s</string>
+    <string name="similarity_result">Совпадение: %d%%</string>
+    <string name="not_recognized">Не распознано</string>
+    <!-- Подсказки к упражнениям -->
+    <string name="hint_tongue_twister_title">Как выполнять?</string>
+    <string name="hint_tongue_twister">Зажмите карандаш зубами и прочитайте скороговорку чётко. Нажмите «Начать запись», читайте вслух, затем «Остановить». Запись сохранится.</string>
+
+    <string name="hint_reading_title">Как выполнять?</string>
+    <string name="hint_reading">Выберите стихотворение, нажмите «Начать запись» и прочитайте его выразительно вслух. Нажмите «Остановить» когда закончите.</string>
+
+    <string name="hint_describe_title">Как выполнять?</string>
+    <string name="hint_describe">Нажмите «Начать» и описывайте предмет вслух 3 минуты. Микрофон работает автоматически и считает слова. Можно переключать предметы.</string>
+
+    <string name="hint_interview_title">Как выполнять?</string>
+    <string name="hint_interview">Ответьте на 5 случайных вопросов как на собеседовании. Нажимайте «Следующий вопрос» после каждого ответа.</string>
+
+    <string name="hint_marathon_title">Как выполнять?</string>
+    <string name="hint_marathon">Нажмите «Начать» и называйте слова по заданию. За 1 минуту назовите максимум слов. Каждое слово — нажатие на кнопку «+1».</string>
+
+    <string name="hint_ok">Понятно</string>
+    <string name="dont_show_again">Больше не показывать</string>
+</resources>

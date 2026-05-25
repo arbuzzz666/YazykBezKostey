@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:background="#f1e2f2"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Чтение вслух"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#4d324c" android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите стихотворение для чтения"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_poem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📜 «Я помню чудное мгновенье...»"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="start|center_vertical"
+        android:padding="14dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#7b3f8a"/> <Button
+    android:id="@+id/btn_poem2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Зимнее утро»"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#9152a5"/> <Button
+    android:id="@+id/btn_poem3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Я вас любил...»"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#a665bd"/> <Button
+    android:id="@+id/btn_poem4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Узник»"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#bb6fbc"/> <Button
+    android:id="@+id/btn_poem5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Няне»"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#c480c5"/> <Button
+    android:id="@+id/btn_poem6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Туча»"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#c98cc9"/> <Button
+    android:id="@+id/btn_poem7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Осень» (отрывок)"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#d29cd3"/> <Button
+    android:id="@+id/btn_poem8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="📜 «Пророк»"
+    android:textSize="15sp"
+    android:textColor="#FFFFFF"
+    android:gravity="start|center_vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="24dp"
+    android:backgroundTint="#d6a9d7"/> <TextView
+    android:id="@+id/tv_poem_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:gravity="center"
+    android:layout_marginBottom="12dp"
+    android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_poem_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4c5e4"
+        android:padding="20dp"
+        android:gravity="start"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_recording_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_record_reading"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="🎤 Начать запись"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#9152a5"/> <Button
+        android:id="@+id/btn_stop_record_reading"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:text="⏹ Остановить"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:enabled="false"
+        android:alpha="0.5"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#d29cd3"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_view_recordings_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📂 Мои записи"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#a665bd"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_reading_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recordings_reading"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_back_from_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад к упражнениям"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#c480c5"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+</ScrollView>

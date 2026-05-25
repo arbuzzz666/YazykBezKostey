@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_diction"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="Дикция" />
+    <item
+        android:id="@+id/navigation_literacy"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Грамотность" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Профиль" />
+</menu>
